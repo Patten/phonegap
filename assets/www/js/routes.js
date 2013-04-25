@@ -1,4 +1,6 @@
-angular.module('angularTest', []).
+'use strict';
+
+angular.module('angularTest', ['angularTest.phoneGapServices', 'angularTest.cordovaReady']).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/page1', {templateUrl: 'partials/page1Content.html',   controller: Page1Controller}).

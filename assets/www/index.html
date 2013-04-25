@@ -26,14 +26,21 @@
         <title>Angular Test</title>
     </head>
     <body>
+        <div id = "deviceProperties"></div>
         <div ng-view></div>
-        <script type="text/javascript" src="cordova-2.6.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/angular/angular.min.js"></script>
-        <script type="text/javascript" src="js/controllers.js"></script>
-        <script type="text/javascript" src="js/routes.js"></script>
+
+
         <script type="text/javascript">
             app.initialize();
         </script>
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/cordovaReady.js"></script>
+        <script type="text/javascript" src="js/phoneGapServices.js"></script>
+        <script type="text/javascript" src="js/controllers.js"></script>
+        <script type="text/javascript" src="js/routes.js"></script>
+
+
     </body>
 </html>
